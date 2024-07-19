@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class Bibliotheque {
     private HashMap<String, Livre> livres;
+    public HashMap<String, Livre> getLivres;
 
     public Bibliotheque() {
         this.livres = new HashMap<>();
@@ -57,5 +58,15 @@ public class Bibliotheque {
                 .filter(entry -> entry.getValue() instanceof Roman
                         && ((Roman) entry.getValue()).getCategorie().equals(categorie))
                 .collect(Collectors.toMap(entry -> entry.getKey(), entry -> entry.getValue()));
+    }
+
+    public String getNombreTotalLivres() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNombreTotalLivres'");
+    }
+
+    public Livre[] getLivres() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getLivres'");
     }
 }

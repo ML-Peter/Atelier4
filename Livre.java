@@ -57,4 +57,9 @@ public class Livre {
     public void setMaisonEdition(String maisonEdition) {
         this.maisonEdition = maisonEdition;
     }
+
+    public Livre[] values() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'values'");
+    }
 }
